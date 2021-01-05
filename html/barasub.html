@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style >
+  hr { 
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    border-color: black;
+}
+</style>
+
+
+</head>
+
+<body>
+	<div class="container">
+  <div class="row">
+    <div class="col-sm-2"> </div>
+    <div class="col-sm-8 padding-logo text-center">
+      <img src="image/TRT_Web Element-04.png">
+    </div>
+    
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+   
+ <div class="row container">
+    <h1 class="col-sm-4 title" style="padding-left: 40px;"> BARASUB</h1>
+</div>
+
+<div class="row container">
+    <p class="col-sm-4 sub-title" style="padding-left: 75px"> Yogyakarta, ID</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Sed nec lorem id nunc
+fringilla lobortis. Etiam ac dapibus felis.
+Donec feugiat neque eget congue placerat.
+Aliquam consequat vehicula mollis.
+Mauris in ultrices leo. Nam consequat,
+neque et luctus molestie, nisi dui aliquet
+justo, vel vulputate ex mauris quis
+mauris. Pellentesque aliquet orci vitae
+lobortis eicitur. Suspendisse ultrices
+sem sed fringilla vulputate. Nam placerat
+sapien erat, at ullamcorper est maximus
+vitae. Vestibulum sit amet rhoncus
+sapien. Sed ac ligula urna. Maecenas
+pulvinar tempus lectus, ac posuere
+mauris. Curabitur eget ornare diam, in
+egestas quam. Pellentesque metus est,
+ultricies ac cursus bibendum, pretium
+sed eros. Nulla id ante sollicitudin, ultrices
+arcu non, varius nibh. Aliquam
+pellentesque, nunc a dictum suscipit,
+mauris nunc placerat neque, eu dapibus
+turpis sem in odio.</p>
+      <p>Email@Barasub.com</p>
+      <p>Website</p>
+      <p>www.barasubpress.blogspot.com</p>
+      <p>Instagram</p>
+      <p>@Barasub</p> 
+    </div>
+
+    <div class="col-lg-8">
+     <img style="max-width: 100%;" src="/image/barasub-sample.jpg">
+    </div>
+    <div class="col-lg-8">
+    <div class="slideshow-container">
+  <div class="mySlides1">
+    <div class="numbertext">1 / 3</div>
+    <img src="/image/barasub-sample2.jpg" style="max-width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext">2 / 3</div>
+    <img src="/image/barasub-sample2.jpg" style="max-width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext">3 / 3</div>
+    <img src="/image/barasub-sample2.jpg" style="max-width:100%">
+  </div>
+
+<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+    </div>
+    </div>
+  </div>
+
+  <hr width="92%" align="center">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"> 
+    </div>
+    <div class="col-lg-8">
+     <h1 style="text-align: center;" class="title"> ARTWORK & PROJECT</h1>
+    </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 container1">
+     <img style="max-width: 100%; padding-top: 20px;" src="/image/black.jpg" class="image1">
+     <div class="overlay1">
+    <div class="text1">Judul Karya</div>
+  </div>
+   </div>
+    <div class="col-lg-6">
+     <img style="max-width: 100%; padding-top: 20px; " src="/image/black.jpg">
+   </div>
+    </div>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+     <img style="max-width: 100%; padding-top: 20px;" src="/image/black.jpg">
+   </div>
+    <div class="col-lg-6">
+     <img style="max-width: 100%; padding-top: 20px;" src="/image/black.jpg">
+   </div>
+    </div>
+  </div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" style="padding-top: 20px; text-align: left;">
+       <img class="mata-img" src="/image/TRT_Web Element-08.png">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-lg-6" style="padding-top: 20px;">
+     <p>The Round Table is a portal for exploring </p>
+     <p>the world of young collectives around South-East Asia.</p>
+    </div>
+   
+    </div>
+  </div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>

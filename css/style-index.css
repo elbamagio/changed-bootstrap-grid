@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+ 
+}
+img {
+  max-width:20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 200px){
+img{
+	
+max-width: 50%;
+}
+}
+
+@media screen and (min-width: 500px){
+img{
+	max-width: 40%;
+}
+}
+
+@media screen and (min-width: 700px){
+img{
+	max-width: 35%;
+}
+}
+
+@media screen and (min-width: 800px){
+img{
+	max-width: 30%;
+}
+}
+@media screen and (min-width: 1000px){
+img{
+	max-width: 20%;
+}
+}
